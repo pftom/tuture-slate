@@ -1,7 +1,7 @@
 {
   "files": [],
   "references": [
-    { "path": "./packages/slate" },
+    { "path": "./packages/tuture-slate" },
     { "path": "./packages/tuture-slate-history" },
     { "path": "./packages/tuture-slate-hyperscript" },
     { "path": "./packages/tuture-slate-react" }

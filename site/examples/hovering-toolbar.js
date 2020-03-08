@@ -6,12 +6,12 @@ import {
   withReact,
   useSlate,
 } from 'tuture-slate-react'
-import { Editor, Transforms, Text, createEditor } from 'slate'
+import { Editor, Transforms, Text, createEditor } from "slate"
 import { css } from 'emotion'
 import { withHistory } from 'tuture-slate-history'
 
 import { Button, Icon, Menu, Portal } from '../components'
-import { Range } from 'slate'
+import { Range } from "slate"
 
 const HoveringMenuExample = () => {
   const [value, setValue] = useState(initialValue)

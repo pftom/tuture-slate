@@ -1,5 +1,5 @@
 {
-  "name": "slate",
+  "name": "tuture-slate",
   "description": "A completely customizable framework for building rich text editors.",
   "version": "0.57.2",
   "license": "MIT",
@@ -7,8 +7,8 @@
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
-  "umd": "dist/slate.js",
-  "umdMin": "dist/slate.min.js",
+  "umd": "dist/tuture-slate.js",
+  "umdMin": "dist/tuture-slate.min.js",
   "sideEffects": false,
   "files": [
     "dist/"

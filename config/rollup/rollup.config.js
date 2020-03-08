@@ -9,7 +9,7 @@ import typescript from 'rollup-plugin-typescript2'
 import { terser } from 'rollup-plugin-terser'
 import { startCase } from 'lodash'
 
-import Core from '../../packages/slate/package.json'
+import Core from '../../packages/tuture-slate/package.json'
 import History from '../../packages/tuture-slate-history/package.json'
 import Hyperscript from '../../packages/tuture-slate-hyperscript/package.json'
 import React from '../../packages/tuture-slate-react/package.json'
