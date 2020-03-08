@@ -4,6 +4,6 @@
     { "path": "./packages/slate" },
     { "path": "./packages/tuture-slate-history" },
     { "path": "./packages/tuture-slate-hyperscript" },
-    { "path": "./packages/slate-react" }
+    { "path": "./packages/tuture-slate-react" }
   ]
 }

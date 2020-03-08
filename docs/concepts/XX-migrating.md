@@ -84,7 +84,7 @@ To give you a sense for the change in total lines of code:
 
 ```
 slate                       8,436  ->  3,958  (47%)
-slate-react                 3,905  ->  1,954  (50%)
+tuture-slate-react                 3,905  ->  1,954  (50%)
 
 slate-base64-serializer        38  ->      0
 slate-dev-benchmark           340  ->      0
@@ -96,7 +96,7 @@ slate-html-serializer         253  ->      0
 tuture-slate-hyperscript             447  ->    345
 slate-plain-serializer         56  ->      0
 slate-prop-types               62  ->      0
-slate-react-placeholder        62  ->      0
+tuture-slate-react-placeholder        62  ->      0
 
 total                      13,807  ->  6,468  (47%)
 ```

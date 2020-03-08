@@ -82,7 +82,7 @@
     "slate": "*",
     "tuture-slate-history": "*",
     "tuture-slate-hyperscript": "*",
-    "slate-react": "*",
+    "tuture-slate-react": "*",
     "source-map-loader": "^0.2.4",
     "typescript": "^3.7.2"
   }

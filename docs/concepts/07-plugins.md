@@ -21,7 +21,7 @@ const withImages = editor => {
 And then to use the plugin, simply:
 
 ```js
-import { createEditor } from 'slate'
+import { createEditor } from "slate"
 
 const editor = withImages(createEditor())
 ```
@@ -33,7 +33,7 @@ This plugin composition model makes Slate extremely easy to extend!
 In addition to the plugin functions, you might want to expose helper functions that are used alongside your plugins. For example:
 
 ```js
-import { Editor, Element } from 'slate'
+import { Editor, Element } from "slate"
 
 const MyEditor = {
   ...Editor,

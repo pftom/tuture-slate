@@ -68,7 +68,7 @@ Now you'd write:
 Transforms.unwrapNodes(editor, ...)
 ```
 
-**The `Command` interfaces were removed.** As part of those changes, the existing `Command`, `CoreCommand`, `HistoryCommand`, and `ReactCommand` interfaces were all removed. You no longer need to define these "command objects", because you can just call the functions directly. Plugins can still define their own overridable commands by existing the `Editor` interface with new functions. The `slate-react` plugin does this with `insertData` and the `tuture-slate-history` plugin does this with `undo` and `redo`.
+**The `Command` interfaces were removed.** As part of those changes, the existing `Command`, `CoreCommand`, `HistoryCommand`, and `ReactCommand` interfaces were all removed. You no longer need to define these "command objects", because you can just call the functions directly. Plugins can still define their own overridable commands by existing the `Editor` interface with new functions. The `tuture-slate-react` plugin does this with `insertData` and the `tuture-slate-history` plugin does this with `undo` and `redo`.
 
 ###### NEW
 
@@ -619,7 +619,7 @@ function onKeyDown(event, editor, next) {
 }
 ```
 
-This is how all of the core logic in `slate-react` is now implemented, eliminating the need for a "before" and an "after" plugin that duplicate logic.
+This is how all of the core logic in `tuture-slate-react` is now implemented, eliminating the need for a "before" and an "after" plugin that duplicate logic.
 
 Under the covers, the `schema`, `commands` and `queries` concept are all implemented as plugins that attach varying middleware as well. For example, commands are processed using the `onCommand` middleware under the covers:
 
@@ -802,7 +802,7 @@ const selection = document.createSelection({
 
 **The `Node.createChildren` static method is deprecated.** This was just an alias for `Node.createList` and wasn't necessary. You can use `Node.createList` going forward for the same effect.
 
-**The `renderPortal` property of plugins is deprecated.** This allows `slate-react` to be slightly slimmer, since this behavior can be handled in React 16 with the new `<React.Fragment>` using the `renderEditor` property instead, in a way that offers more control over the portal behavior.
+**The `renderPortal` property of plugins is deprecated.** This allows `tuture-slate-react` to be slightly slimmer, since this behavior can be handled in React 16 with the new `<React.Fragment>` using the `renderEditor` property instead, in a way that offers more control over the portal behavior.
 
 **The `data` property of plugins is deprecated.** This property wasn't well designed and circumvented the core tenet that all changes to the `value` object will flow through operations inside `Change` objects. It was mostly used for view-layer state which should be handled with React-specific conventions for state management instead.
 
@@ -1338,7 +1338,7 @@ This is just an attempt to make dealing with normalization errors slightly more 
 
 **The `Html`, `Plain` and `Raw` serializers are broken into new packages.** Previously you'd import them from `slate`. But now you'll import them from `slate-html-serializer` and `slate-plain-serializer`. And the `Raw` serializer that was deprecated is now removed.
 
-**The `Editor` and `Placeholder` components are broken into a new React-specific package.** Previously you'd import them from `slate`. But now you `import { Editor } from 'slate-react'` instead.
+**The `Editor` and `Placeholder` components are broken into a new React-specific package.** Previously you'd import them from `slate`. But now you `import { Editor } from 'tuture-slate-react'` instead.
 
 ---
 
@@ -1592,7 +1592,7 @@ function onKeyDown(e, data, change) {
 
 **The `onKeyDown` and `onBeforeInput` handlers signatures have changed!** Previously, some Slate handlers had a signature of `(e, state, editor)` and others had a signature of `(e, data, state, editor)`. Now all handlers will be passed a `data` object—which contains Slate-specific data related to the event—even if it is empty. This is helpful for future compatibility where we might need to add data to a handler that previously didn't have any, and is nicer for consistency. The `onKeyDown` handler's new `data` object contains the `key` name, `code` and a series of `is*` properties to make working with hotkeys easier. The `onBeforeInput` handler's new `data` object is empty.
 
-**The `Utils` export has been removed.** Previously, a `Key` utility and the `findDOMNode` utility were exposed under the `Utils` object. The `Key` has been removed in favor of the `data` object passed to `onKeyDown`. And then `findDOMNode` utility has been upgraded to a top-level named export, so you'll now need to access it via `import { findDOMNode } from 'slate'`.
+**The `Utils` export has been removed.** Previously, a `Key` utility and the `findDOMNode` utility were exposed under the `Utils` object. The `Key` has been removed in favor of the `data` object passed to `onKeyDown`. And then `findDOMNode` utility has been upgraded to a top-level named export, so you'll now need to access it via `import { findDOMNode } from "slate"`.
 
 **Void nodes now permanently have `" "` as content.** Previously, they contained an empty string, but this isn't technically correct, since they have content and shouldn't be considered "empty". Now they will have a single space of content. This shouldn't really affect anyone, unless you happened to be accessing that string for serialization.
 

@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useMemo } from 'react'
 import { jsx } from 'tuture-slate-hyperscript'
-import { Transforms, createEditor } from 'slate'
+import { Transforms, createEditor } from "slate"
 import { withHistory } from 'tuture-slate-history'
 import { css } from 'emotion'
 import {
@@ -9,7 +9,7 @@ import {
   withReact,
   useSelected,
   useFocused,
-} from 'slate-react'
+} from 'tuture-slate-react'
 
 const ELEMENT_TAGS = {
   A: el => ({ type: 'link', url: el.getAttribute('href') }),

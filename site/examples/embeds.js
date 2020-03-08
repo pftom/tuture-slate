@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react'
-import { Transforms, createEditor } from 'slate'
+import { Transforms, createEditor } from "slate"
 import {
   Slate,
   Editable,
@@ -8,7 +8,7 @@ import {
   ReactEditor,
   useFocused,
   useSelected,
-} from 'slate-react'
+} from 'tuture-slate-react'
 
 const EmbedsExample = () => {
   const [value, setValue] = useState(initialValue)

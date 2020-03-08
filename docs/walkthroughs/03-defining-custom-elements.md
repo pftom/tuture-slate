@@ -118,7 +118,7 @@ Okay, but now we'll need a way for the user to actually turn a block into a code
 
 ```jsx
 // Import the `Editor` helpers from Slate.
-import { Editor } from 'slate'
+import { Editor } from "slate"
 
 const App = () => {
   const editor = useMemo(() => withReact(createEditor()), [])

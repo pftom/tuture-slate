@@ -23,7 +23,7 @@
     "slate": ">=0.55.0"
   },
   "umdGlobals": {
-    "slate": "Slate"
+    "slate": "slate"
   },
   "keywords": [
     "deserialize",

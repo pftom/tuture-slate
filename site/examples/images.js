@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react'
 import imageExtensions from 'image-extensions'
 import isUrl from 'is-url'
-import { Transforms, createEditor } from 'slate'
+import { Transforms, createEditor } from "slate"
 import {
   Slate,
   Editable,
@@ -9,7 +9,7 @@ import {
   useSelected,
   useFocused,
   withReact,
-} from 'slate-react'
+} from 'tuture-slate-react'
 import { withHistory } from 'tuture-slate-history'
 import { css } from 'emotion'
 
