@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react'
 import imageExtensions from 'image-extensions'
 import isUrl from 'is-url'
-import { Transforms, createEditor } from "slate"
+import { Transforms, createEditor } from "tuture-slate"
 import {
   Slate,
   Editable,

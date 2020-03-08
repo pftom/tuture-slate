@@ -79,7 +79,7 @@
     "rollup-plugin-terser": "^5.1.2",
     "rollup-plugin-typescript2": "^0.25.2",
     "rollup-plugin-uglify": "^6.0.3",
-    "slate": "*",
+    "tuture-slate": "*",
     "tuture-slate-history": "*",
     "tuture-slate-hyperscript": "*",
     "tuture-slate-react": "*",

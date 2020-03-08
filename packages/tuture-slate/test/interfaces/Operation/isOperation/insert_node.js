@@ -1,4 +1,4 @@
-import { Operation } from "slate"
+import { Operation } from "tuture-slate"
 
 export const input = {
   type: 'insert_node',

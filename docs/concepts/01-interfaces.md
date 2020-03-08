@@ -58,7 +58,7 @@ In addition to the typing information, each interface in Slate also exposes a se
 For example, when working with nodes:
 
 ```js
-import { Node } from "slate"
+import { Node } from "tuture-slate"
 
 // Get the string content of an element node.
 const string = Node.string(element)
@@ -70,7 +70,7 @@ const descendant = Node.get(value, path)
 Or, when working with ranges:
 
 ```js
-import { Range } from "slate"
+import { Range } from "tuture-slate"
 
 // Get the start and end points of a range in order.
 const [start, end] = Range.edges(range)
@@ -98,7 +98,7 @@ const isImageElement = element => {
 You can define these as one-off functions easily. But you might also bundle them up into namespaces, just like the core interfaces do, and use them instead. For example:
 
 ```js
-import { Element } from "slate"
+import { Element } from "tuture-slate"
 
 // You can use `MyElement` everywhere to have access to your extensions.
 export const MyElement = {

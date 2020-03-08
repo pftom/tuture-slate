@@ -18,14 +18,14 @@
     "is-plain-object": "^3.0.0"
   },
   "devDependencies": {
-    "slate": "^0.57.2",
+    "tuture-slate": "^0.57.2",
     "tuture-slate-hyperscript": "^0.57.2"
   },
   "peerDependencies": {
-    "slate": ">=0.55.0"
+    "tuture-slate": ">=0.55.0"
   },
   "umdGlobals": {
-    "slate": "slate"
+    "tuture-slate": "tuture-slate"
   },
   "keywords": [
     "editor",
@@ -33,7 +33,7 @@
     "operation",
     "redo",
     "save",
-    "slate",
+    "tuture-slate",
     "stack",
     "undo"
   ]

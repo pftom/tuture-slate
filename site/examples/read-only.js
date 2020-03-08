@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react'
-import { createEditor } from "slate"
+import { createEditor } from "tuture-slate"
 import { Slate, Editable, withReact } from 'tuture-slate-react'
 
 const ReadOnlyExample = () => {

@@ -9,7 +9,7 @@ You can define these behaviors by passing "render props" to the top-level `<Edit
 For example if you wanted to render custom element components, you'd pass in the `renderElement` prop:
 
 ```jsx
-import { createEditor } from "slate"
+import { createEditor } from "tuture-slate"
 import { Slate, Editable, withReact } from 'tuture-slate-react'
 
 const MyEditor = () => {

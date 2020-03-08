@@ -1,4 +1,4 @@
-import { Node } from "slate"
+import { Node } from "tuture-slate"
 
 export const input = true
 

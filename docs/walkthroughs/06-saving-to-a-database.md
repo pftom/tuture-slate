@@ -100,7 +100,7 @@ But what if you want something other than JSON? Well, you'd need to serialize yo
 
 ```jsx
 // Import the `Node` helper interface from Slate.
-import { Node } from "slate"
+import { Node } from "tuture-slate"
 
 // Define a serializing function that takes a value and returns a string.
 const serialize = value => {

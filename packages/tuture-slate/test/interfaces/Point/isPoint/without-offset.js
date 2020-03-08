@@ -1,4 +1,4 @@
-import { Point } from "slate"
+import { Point } from "tuture-slate"
 
 export const input = {
   path: [0, 1],

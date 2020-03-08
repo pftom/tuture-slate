@@ -6,7 +6,7 @@ import {
   Text,
   Editor,
   createEditor as makeEditor,
-} from "slate"
+} from "tuture-slate"
 import {
   AnchorToken,
   FocusToken,

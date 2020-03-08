@@ -1,4 +1,4 @@
-import { Text } from "slate"
+import { Text } from "tuture-slate"
 
 export const input = {
   text: { text: '', bold: true, italic: true },

@@ -1,6 +1,6 @@
 /** @jsx jsx  */
 
-import { Editor } from "slate"
+import { Editor } from "tuture-slate"
 import { jsx } from 'tuture-slate-hyperscript'
 
 export const input = (

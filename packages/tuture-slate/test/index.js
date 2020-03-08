@@ -1,9 +1,9 @@
 import assert from 'assert'
 import { fixtures } from '../../../support/fixtures'
-import { Editor } from "slate"
+import { Editor } from "tuture-slate"
 import { createHyperscript } from 'tuture-slate-hyperscript'
 
-describe("slate", () => {
+describe("tuture-slate", () => {
   fixtures(__dirname, 'interfaces', ({ module }) => {
     let { input, test, output } = module
 
