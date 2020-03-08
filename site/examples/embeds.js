@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react'
-import { Transforms, createEditor } from "slate"
+import { Transforms, createEditor } from 'slate'
 import {
   Slate,
   Editable,

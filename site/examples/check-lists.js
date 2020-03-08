@@ -7,7 +7,7 @@ import {
   useReadOnly,
   ReactEditor,
 } from 'tuture-slate-react'
-import { Editor, Transforms, Range, Point, createEditor } from "slate"
+import { Editor, Transforms, Range, Point, createEditor } from 'slate'
 import { css } from 'emotion'
 import { withHistory } from 'tuture-slate-history'
 
