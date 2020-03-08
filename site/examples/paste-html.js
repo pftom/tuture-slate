@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useMemo } from 'react'
 import { jsx } from 'tuture-slate-hyperscript'
 import { Transforms, createEditor } from 'slate'
-import { withHistory } from 'slate-history'
+import { withHistory } from 'tuture-slate-history'
 import { css } from 'emotion'
 import {
   Slate,

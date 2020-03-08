@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useMemo } from 'react'
 import { Slate, Editable, withReact } from 'slate-react'
 import { Editor, Range, Point, createEditor } from 'slate'
-import { withHistory } from 'slate-history'
+import { withHistory } from 'tuture-slate-history'
 
 const TablesExample = () => {
   const [value, setValue] = useState(initialValue)

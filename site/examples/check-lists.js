@@ -9,7 +9,7 @@ import {
 } from 'slate-react'
 import { Editor, Transforms, Range, Point, createEditor } from 'slate'
 import { css } from 'emotion'
-import { withHistory } from 'slate-history'
+import { withHistory } from 'tuture-slate-history'
 
 const CheckListsExample = () => {
   const [value, setValue] = useState(initialValue)

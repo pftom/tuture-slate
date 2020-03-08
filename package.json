@@ -80,7 +80,7 @@
     "rollup-plugin-typescript2": "^0.25.2",
     "rollup-plugin-uglify": "^6.0.3",
     "slate": "*",
-    "slate-history": "*",
+    "tuture-slate-history": "*",
     "tuture-slate-hyperscript": "*",
     "slate-react": "*",
     "source-map-loader": "^0.2.4",

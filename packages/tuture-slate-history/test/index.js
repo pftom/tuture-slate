@@ -3,7 +3,7 @@ import { fixtures } from '../../../support/fixtures'
 import { createHyperscript } from 'tuture-slate-hyperscript'
 import { withHistory } from '..'
 
-describe('slate-history', () => {
+describe('tuture-slate-history', () => {
   fixtures(__dirname, 'undo', ({ module }) => {
     const { input, run, output } = module
     const editor = withTest(withHistory(input))

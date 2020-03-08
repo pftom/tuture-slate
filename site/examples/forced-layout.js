@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useMemo } from 'react'
 import { Slate, Editable, withReact } from 'slate-react'
 import { Transforms, createEditor, Node } from 'slate'
-import { withHistory } from 'slate-history'
+import { withHistory } from 'tuture-slate-history'
 
 const withLayout = editor => {
   const { normalizeNode } = editor

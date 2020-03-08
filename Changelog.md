@@ -68,7 +68,7 @@ Now you'd write:
 Transforms.unwrapNodes(editor, ...)
 ```
 
-**The `Command` interfaces were removed.** As part of those changes, the existing `Command`, `CoreCommand`, `HistoryCommand`, and `ReactCommand` interfaces were all removed. You no longer need to define these "command objects", because you can just call the functions directly. Plugins can still define their own overridable commands by existing the `Editor` interface with new functions. The `slate-react` plugin does this with `insertData` and the `slate-history` plugin does this with `undo` and `redo`.
+**The `Command` interfaces were removed.** As part of those changes, the existing `Command`, `CoreCommand`, `HistoryCommand`, and `ReactCommand` interfaces were all removed. You no longer need to define these "command objects", because you can just call the functions directly. Plugins can still define their own overridable commands by existing the `Editor` interface with new functions. The `slate-react` plugin does this with `insertData` and the `tuture-slate-history` plugin does this with `undo` and `redo`.
 
 ###### NEW
 

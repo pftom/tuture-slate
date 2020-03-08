@@ -90,7 +90,7 @@ slate-base64-serializer        38  ->      0
 slate-dev-benchmark           340  ->      0
 slate-dev-environment         102  ->      0
 slate-dev-test-utils           44  ->      0
-slate-history                   0  ->    211
+tuture-slate-history                   0  ->    211
 slate-hotkeys                  62  ->      0
 slate-html-serializer         253  ->      0
 tuture-slate-hyperscript             447  ->    345

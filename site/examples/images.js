@@ -10,7 +10,7 @@ import {
   useFocused,
   withReact,
 } from 'slate-react'
-import { withHistory } from 'slate-history'
+import { withHistory } from 'tuture-slate-history'
 import { css } from 'emotion'
 
 import { Button, Icon, Toolbar } from '../components'
