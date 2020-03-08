@@ -11,7 +11,7 @@ import { startCase } from 'lodash'
 
 import Core from '../../packages/slate/package.json'
 import History from '../../packages/slate-history/package.json'
-import Hyperscript from '../../packages/slate-hyperscript/package.json'
+import Hyperscript from '../../packages/tuture-slate-hyperscript/package.json'
 import React from '../../packages/slate-react/package.json'
 
 /**

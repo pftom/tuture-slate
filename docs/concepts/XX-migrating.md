@@ -32,7 +32,7 @@ The number of commands has been reduced too. Previously we had commands for ever
 
 ### Fewer Packages
 
-In attempt to decrease the maintenance burden, and because the new abstraction and APIs in Slate's core packages make things much easier, the total number of packages has been reduced. Things like `slate-plain-serializer`, `slate-base64-serializer`, etc. have been removed and can be implemented in userland easily if needed. Even the `slate-html-deserializer` can now be implemented in userland (in ~10 LOC leveraging `slate-hyperscript`). And internal packages like `slate-dev-environment`, `slate-dev-test-utils`, etc. are no longer exposed because they are implementation details.
+In attempt to decrease the maintenance burden, and because the new abstraction and APIs in Slate's core packages make things much easier, the total number of packages has been reduced. Things like `slate-plain-serializer`, `slate-base64-serializer`, etc. have been removed and can be implemented in userland easily if needed. Even the `slate-html-deserializer` can now be implemented in userland (in ~10 LOC leveraging `tuture-slate-hyperscript`). And internal packages like `slate-dev-environment`, `slate-dev-test-utils`, etc. are no longer exposed because they are implementation details.
 
 ### Commands
 
@@ -93,7 +93,7 @@ slate-dev-test-utils           44  ->      0
 slate-history                   0  ->    211
 slate-hotkeys                  62  ->      0
 slate-html-serializer         253  ->      0
-slate-hyperscript             447  ->    345
+tuture-slate-hyperscript             447  ->    345
 slate-plain-serializer         56  ->      0
 slate-prop-types               62  ->      0
 slate-react-placeholder        62  ->      0

@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "slate": "^0.57.2",
-    "slate-hyperscript": "^0.57.2"
+    "tuture-slate-hyperscript": "^0.57.2"
   },
   "peerDependencies": {
     "slate": ">=0.55.0"

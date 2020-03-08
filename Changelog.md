@@ -1326,7 +1326,7 @@ This is just an attempt to make dealing with normalization errors slightly more 
 
 **Slate is now a "monorepo".** Instead of a single package, Slate has been divided up into individual packages so that you can only require what you need, cutting down on file size. In the process, some helpful modules that used to be internal-only are now exposed.
 
-**There's a new `slate-hyperscript` helper.** This was possible thanks to the work on [`slate-sugar`](https://github.com/GitbookIO/slate-sugar), which paved the way.
+**There's a new `tuture-slate-hyperscript` helper.** This was possible thanks to the work on [`slate-sugar`](https://github.com/GitbookIO/slate-sugar), which paved the way.
 
 **The `slate-prop-types` package is now exposed.** Previously this was an internal module, but now you can use it for adding prop types to any components or plugins you create.
 

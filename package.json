@@ -81,7 +81,7 @@
     "rollup-plugin-uglify": "^6.0.3",
     "slate": "*",
     "slate-history": "*",
-    "slate-hyperscript": "*",
+    "tuture-slate-hyperscript": "*",
     "slate-react": "*",
     "source-map-loader": "^0.2.4",
     "typescript": "^3.7.2"

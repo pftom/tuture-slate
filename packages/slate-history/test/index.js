@@ -1,6 +1,6 @@
 import assert from 'assert'
 import { fixtures } from '../../../support/fixtures'
-import { createHyperscript } from 'slate-hyperscript'
+import { createHyperscript } from 'tuture-slate-hyperscript'
 import { withHistory } from '..'
 
 describe('slate-history', () => {

@@ -121,13 +121,13 @@ It's really that easy!
 
 Another common use case in Slate is doing the reverse—deserializing. This is when you have some arbitrary input and want to convert it into a Slate-compabitable JSON structure. For example, when someone pastes HTML into your editor and you want to ensure it gets parsed with the proper formatting for your editor.
 
-Slate has a built-in helper for this: the `slate-hyperscript` package.
+Slate has a built-in helper for this: the `tuture-slate-hyperscript` package.
 
-The most common way to use `slate-hyperscript` is for writing JSX documents, for example when writing tests. You might use it like so:
+The most common way to use `tuture-slate-hyperscript` is for writing JSX documents, for example when writing tests. You might use it like so:
 
 ```jsx
 /** @jsx jsx */
-import { jsx } from 'slate-hyperscript'
+import { jsx } from 'tuture-slate-hyperscript'
 
 const input = (
   <fragment>
@@ -151,12 +151,12 @@ This is great for test cases, or places where you want to be able to write a lot
 
 However! This doesn't help with deserialization.
 
-But `slate-hyperscript` isn't only for JSX. It's just a way to build _trees of Slate content_. Which happens to be exactly what you want to do when you're deserializing something like HTML.
+But `tuture-slate-hyperscript` isn't only for JSX. It's just a way to build _trees of Slate content_. Which happens to be exactly what you want to do when you're deserializing something like HTML.
 
 For example, here's a `deserialize` function for HTML:
 
 ```js
-import { jsx } from 'slate-hyperscript'
+import { jsx } from 'tuture-slate-hyperscript'
 
 const deserialize = el => {
   if (el.nodeType === 3) {
