@@ -1,4 +1,4 @@
-import { Editor, Node, Path, Point, Range, Transforms } from "slate"
+import { Editor, Node, Path, Point, Range, Transforms } from 'tuture-slate'
 
 import { Key } from '../utils/key'
 import {

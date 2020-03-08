@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Element } from "slate"
+import { Text, Element } from 'tuture-slate'
 
 import String from './string'
 import { PLACEHOLDER_SYMBOL } from '../utils/weak-maps'

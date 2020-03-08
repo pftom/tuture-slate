@@ -1,4 +1,4 @@
-import { Node, Ancestor, Editor, Range } from "slate"
+import { Node, Ancestor, Editor, Range } from 'tuture-slate'
 
 import { Key } from './key'
 
