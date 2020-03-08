@@ -1,4 +1,4 @@
-import { Range } from "tuture-slate"
+import { Range } from 'tuture-slate'
 
 export const input = {
   range: {

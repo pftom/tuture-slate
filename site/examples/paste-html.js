@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useMemo } from 'react'
 import { jsx } from 'tuture-slate-hyperscript'
-import { Transforms, createEditor } from "tuture-slate"
+import { Transforms, createEditor } from 'tuture-slate'
 import { withHistory } from 'tuture-slate-history'
 import { css } from 'emotion'
 import {

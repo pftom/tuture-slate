@@ -1,4 +1,4 @@
-import { Path } from "tuture-slate"
+import { Path } from 'tuture-slate'
 
 export const input = [0, 1, 2]
 

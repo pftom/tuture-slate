@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import { Transforms } from "tuture-slate"
+import { Transforms } from 'tuture-slate'
 import { jsx } from '../../..'
 
 const fragment = (

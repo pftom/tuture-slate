@@ -1,5 +1,5 @@
 import React, { useMemo, useCallback, useRef, useEffect, useState } from 'react'
-import { Editor, Transforms, Range, createEditor } from "tuture-slate"
+import { Editor, Transforms, Range, createEditor } from 'tuture-slate'
 import { withHistory } from 'tuture-slate-history'
 import {
   Slate,

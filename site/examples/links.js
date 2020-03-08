@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react'
 import isUrl from 'is-url'
 import { Slate, Editable, withReact, useSlate } from 'tuture-slate-react'
-import { Transforms, Editor, Range, createEditor } from "tuture-slate"
+import { Transforms, Editor, Range, createEditor } from 'tuture-slate'
 import { withHistory } from 'tuture-slate-history'
 
 import { Button, Icon, Toolbar } from '../components'

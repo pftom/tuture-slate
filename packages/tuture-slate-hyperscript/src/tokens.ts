@@ -1,4 +1,4 @@
-import { Node, Path, Text } from "tuture-slate"
+import { Node, Path, Text } from 'tuture-slate'
 
 /**
  * A weak map to hold anchor tokens.

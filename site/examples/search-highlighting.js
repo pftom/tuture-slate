@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useMemo } from 'react'
 import { Slate, Editable, withReact } from 'tuture-slate-react'
-import { Text, createEditor } from "tuture-slate"
+import { Text, createEditor } from 'tuture-slate'
 import { css } from 'emotion'
 import { withHistory } from 'tuture-slate-history'
 

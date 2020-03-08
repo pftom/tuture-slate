@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import { Editor, Text } from "tuture-slate"
+import { Editor, Text } from 'tuture-slate'
 import { jsx } from '../../..'
 
 export const input = (

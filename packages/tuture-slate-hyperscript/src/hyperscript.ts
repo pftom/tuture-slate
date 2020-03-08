@@ -1,5 +1,5 @@
 import isPlainObject from 'is-plain-object'
-import { Element } from "tuture-slate"
+import { Element } from 'tuture-slate'
 import {
   createAnchor,
   createCursor,

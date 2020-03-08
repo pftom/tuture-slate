@@ -1,4 +1,4 @@
-import { Text } from "tuture-slate"
+import { Text } from 'tuture-slate'
 
 export const input = {}
 

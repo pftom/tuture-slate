@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import { Transforms, Text } from "tuture-slate"
+import { Transforms, Text } from 'tuture-slate'
 import { jsx } from '../../..'
 
 export const run = editor => {
