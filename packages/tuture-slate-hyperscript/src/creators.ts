@@ -125,7 +125,6 @@ export function createFocus(
   attributes: { [key: string]: any },
   children: any[]
 ): FocusToken {
-
   return new FocusToken(attributes)
 }
 

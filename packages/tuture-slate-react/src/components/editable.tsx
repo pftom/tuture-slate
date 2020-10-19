@@ -1059,7 +1059,6 @@ const isTargetInsideVoid = (
 ): boolean => {
   const slateNode =
     hasTarget(editor, target) && ReactEditor.toSlateNode(editor, target)
-
   return Editor.isVoid(editor, slateNode)
 }
 
