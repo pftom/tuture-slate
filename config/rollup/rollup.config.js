@@ -9,10 +9,10 @@ import typescript from 'rollup-plugin-typescript2'
 import { terser } from 'rollup-plugin-terser'
 import { startCase } from 'lodash'
 
-import Core from '../../packages/slate/package.json'
-import History from '../../packages/slate-history/package.json'
-import Hyperscript from '../../packages/slate-hyperscript/package.json'
-import React from '../../packages/slate-react/package.json'
+import Core from '../../packages/tuture-slate/package.json'
+import History from '../../packages/tuture-slate-history/package.json'
+import Hyperscript from '../../packages/tuture-slate-hyperscript/package.json'
+import React from '../../packages/tuture-slate-react/package.json'
 
 /**
  * Return a Rollup configuration for a `pkg` with `env` and `target`.
