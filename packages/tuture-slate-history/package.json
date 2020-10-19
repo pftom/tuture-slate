@@ -1,7 +1,7 @@
 {
   "name": "tuture-slate-history",
   "description": "An operation-based history implementation for Slate editors.",
-  "version": "0.57.5",
+  "version": "0.57.6",
   "license": "MIT",
   "repository": "git://github.com/ianstormtaylor/slate.git",
   "main": "dist/index.js",
@@ -18,8 +18,8 @@
     "is-plain-object": "^3.0.0"
   },
   "devDependencies": {
-    "tuture-slate": "^0.57.5",
-    "tuture-slate-hyperscript": "^0.57.5"
+    "tuture-slate": "^0.57.6",
+    "tuture-slate-hyperscript": "^0.57.6"
   },
   "peerDependencies": {
     "tuture-slate": ">=0.55.0"
