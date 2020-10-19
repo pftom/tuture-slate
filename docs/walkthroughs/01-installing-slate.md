@@ -24,7 +24,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { createEditor } from 'tuture-slate'
 
 // Import the Slate components and React plugin.
-import { Slate, Editable, withReact } from 'slate-react'
+import { Slate, Editable, withReact } from 'tuture-slate-react'
 ```
 
 Before we use those imports, let's start with an empty `<App>` component:
