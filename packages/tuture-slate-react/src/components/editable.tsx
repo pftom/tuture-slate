@@ -7,7 +7,7 @@ import {
   Range,
   Text,
   Transforms,
-} from 'slate'
+} from 'tuture-slate'
 import throttle from 'lodash/throttle'
 import scrollIntoView from 'scroll-into-view-if-needed'
 
