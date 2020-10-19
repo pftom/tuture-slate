@@ -30,6 +30,7 @@ export const Element = {
    */
 
   isElementList(value: any): value is Element[] {
+
     return (
       Array.isArray(value) &&
       (value.length === 0 || Element.isElement(value[0]))

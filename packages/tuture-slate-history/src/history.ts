@@ -17,6 +17,7 @@ export const History = {
    */
 
   isHistory(value: any): value is History {
+
     return (
       isPlainObject(value) &&
       Array.isArray(value.redos) &&
