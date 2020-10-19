@@ -60,15 +60,6 @@ function configure(pkg, env, target) {
       namedExports: {
         esrever: ['reverse'],
 
-        immutable: [
-          'List',
-          'Map',
-          'Record',
-          'OrderedSet',
-          'Set',
-          'Stack',
-          'is',
-        ],
         'react-dom': ['findDOMNode'],
         'react-dom/server': ['renderToStaticMarkup'],
       },
