@@ -2,6 +2,12 @@
 
 This is a list of changes to Slate with each new release. Until `1.0.0` is released, breaking changes will be added as minor version bumps, and smaller, patch-level changes won't be noted since the library is moving quickly while in beta.
 
+### `0.58.0` - May 5th, 2020
+
+###### BREAKING
+
+**User properties on Elements and Texts now have an unknown type instead of any.** Previously, the arbitrary user defined keys on the `Text` and `Element` interface had a type of `any` which effectively removed any potential type checking on those properties. Now these have a type of `unknown` so that type checking can be done by consumers of the API when they are applying their own custom properties to the `Text`s and `Element`s.
+
 ---
 
 ### `0.57.0` — December 18, 2019
@@ -1338,7 +1344,7 @@ This is just an attempt to make dealing with normalization errors slightly more 
 
 **The `Html`, `Plain` and `Raw` serializers are broken into new packages.** Previously you'd import them from `slate`. But now you'll import them from `slate-html-serializer` and `slate-plain-serializer`. And the `Raw` serializer that was deprecated is now removed.
 
-**The `Editor` and `Placeholder` components are broken into a new React-specific package.** Previously you'd import them from `slate`. But now you `import { Editor } from 'tuture-slate-react'` instead.
+**The `Editor` and `Placeholder` components are broken into a new React-specific package.** Previously you'd import them from `slate`. But now you `import { Editor } from 'slate-react'` instead.
 
 ---
 
@@ -1592,7 +1598,7 @@ function onKeyDown(e, data, change) {
 
 **The `onKeyDown` and `onBeforeInput` handlers signatures have changed!** Previously, some Slate handlers had a signature of `(e, state, editor)` and others had a signature of `(e, data, state, editor)`. Now all handlers will be passed a `data` object—which contains Slate-specific data related to the event—even if it is empty. This is helpful for future compatibility where we might need to add data to a handler that previously didn't have any, and is nicer for consistency. The `onKeyDown` handler's new `data` object contains the `key` name, `code` and a series of `is*` properties to make working with hotkeys easier. The `onBeforeInput` handler's new `data` object is empty.
 
-**The `Utils` export has been removed.** Previously, a `Key` utility and the `findDOMNode` utility were exposed under the `Utils` object. The `Key` has been removed in favor of the `data` object passed to `onKeyDown`. And then `findDOMNode` utility has been upgraded to a top-level named export, so you'll now need to access it via `import { findDOMNode } from 'tuture-slate'`.
+**The `Utils` export has been removed.** Previously, a `Key` utility and the `findDOMNode` utility were exposed under the `Utils` object. The `Key` has been removed in favor of the `data` object passed to `onKeyDown`. And then `findDOMNode` utility has been upgraded to a top-level named export, so you'll now need to access it via `import { findDOMNode } from 'slate'`.
 
 **Void nodes now permanently have `" "` as content.** Previously, they contained an empty string, but this isn't technically correct, since they have content and shouldn't be considered "empty". Now they will have a single space of content. This shouldn't really affect anyone, unless you happened to be accessing that string for serialization.
 
