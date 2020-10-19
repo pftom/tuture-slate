@@ -24,6 +24,7 @@ const HoveringMenuExample = () => {
         renderLeaf={props => <Leaf {...props} />}
         placeholder="Enter some text..."
         onDOMBeforeInput={event => {
+          event.preventDefault();
           switch (event.inputType) {
             case 'formatBold':
               return toggleFormat(editor, 'bold')
