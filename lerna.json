@@ -1,8 +1,7 @@
 {
-  "version": "0.57.6",
-  "npmClient": "yarn",
+  "version": "0.57.7",
+  "npmClient": "npm",
+  "registry": "https://registry.npmjs.org/",
   "useWorkspaces": true,
-  "packages": [
-    "packages/*"
-  ]
+  "lerna": "2.7.1"
 }
