@@ -1,5 +1,5 @@
-import React, { useMemo, useState, useCallback } from 'react'
-import { Node } from 'tuture-slate'
+import React, { useMemo, useState, useCallback, useEffect } from 'react'
+import { Node } from 'slate'
 
 import { ReactEditor } from '../plugin/react-editor'
 import { FocusedContext } from '../hooks/use-focused'
@@ -33,6 +33,12 @@ export const Slate = (props: {
   }, [key, onChange])
 
   EDITOR_TO_ON_CHANGE.set(editor, onContextChange)
+
+  useEffect(() => {
+    return () => {
+      EDITOR_TO_ON_CHANGE.set(editor, () => {})
+    }
+  }, [])
 
   return (
     <SlateContext.Provider value={context}>
