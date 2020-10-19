@@ -2,14 +2,15 @@
 
 Want to contribute to Slate? That would be awesome!
 
-- [Reporting Bugs](#reporting-bugs)
-- [Asking Questions](#asking-questions)
-- [Submitting Pull Requests](#submitting-pull-requests)
-- [Repository Setup](#repository-setup)
-- [Running Examples](#running-examples)
-- [Running Tests](#running-tests)
-- [Testing Input Methods](#testing-input-methods)
-- [Publishing Releases](#publishing-releases)
+- [Contributing](#contributing)
+  - [Reporting Bugs](#reporting-bugs)
+  - [Asking Questions](#asking-questions)
+  - [Submitting Pull Requests](#submitting-pull-requests)
+  - [Repository Setup](#repository-setup)
+  - [Running Examples](#running-examples)
+  - [Running Tests](#running-tests)
+  - [Testing Input Methods](#testing-input-methods)
+  - [Publishing Releases](#publishing-releases)
 
 ## Reporting Bugs
 
@@ -80,7 +81,7 @@ If you only want to run a specific test or tests, you can run `yarn test --fgrep
 
 ## Publishing Releases
 
-Since we use [Lerna](https://lernajs.io) to manage the Slate packages this is fairly easy, just run:
+Since we use [Lerna](https://lerna.js.io) to manage the Slate packages this is fairly easy, just run:
 
 ```js
 yarn release
