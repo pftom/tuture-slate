@@ -30,7 +30,7 @@ Before you can add `slate.js` to your page, you need to bring your own copy of `
 <script src="./vendor/react-dom-server.js"></script>
 ```
 
-This ensures that Slate isn't bundling its own copy of Immutable and React, which would greatly increase the file size of your application.
+This ensures that Slate isn't bundling its own copy of React, which would greatly increase the file size of your application.
 
 Then you can add `slate.js` after those includes:
 
@@ -45,7 +45,7 @@ To make things easier, for quick prototyping, you can also use the [`unpkg.com`]
 <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/react-dom/umd/react-dom-server.browser.production.min.js"></script>
 <script src="https://unpkg.com/slate/dist/slate.js"></script>
-<script src="https://unpkg.com/tuture-slate-react/dist/tuture-slate-react.js"></script>
+<script src="https://unpkg.com/slate-react/dist/slate-react.js"></script>
 ```
 
 That's it, you're ready to go!

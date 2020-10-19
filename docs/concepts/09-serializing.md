@@ -9,7 +9,7 @@ And, because Slate uses plain JSON for its data, you can write serialization log
 For example, taking the value of an editor and returning plaintext:
 
 ```js
-import { Node } from 'tuture-slate'
+import { Node } from 'slate'
 
 const serialize = nodes => {
   return nodes.map(n => Node.string(n)).join('\n')
@@ -53,7 +53,7 @@ For example, here's a similar `serialize` function for HTML:
 
 ```js
 import escapeHtml from 'escape-html'
-import { Node, Text } from 'tuture-slate'
+import { Node, Text } from 'slate'
 
 const serialize = node => {
   if (Text.isText(node)) {
@@ -119,15 +119,15 @@ It's really that easy!
 
 ## Deserializing
 
-Another common use case in Slate is doing the reverse—deserializing. This is when you have some arbitrary input and want to convert it into a Slate-compabitable JSON structure. For example, when someone pastes HTML into your editor and you want to ensure it gets parsed with the proper formatting for your editor.
+Another common use case in Slate is doing the reverse—deserializing. This is when you have some arbitrary input and want to convert it into a Slate-compatible JSON structure. For example, when someone pastes HTML into your editor and you want to ensure it gets parsed with the proper formatting for your editor.
 
-Slate has a built-in helper for this: the `tuture-slate-hyperscript` package.
+Slate has a built-in helper for this: the `slate-hyperscript` package.
 
-The most common way to use `tuture-slate-hyperscript` is for writing JSX documents, for example when writing tests. You might use it like so:
+The most common way to use `slate-hyperscript` is for writing JSX documents, for example when writing tests. You might use it like so:
 
 ```jsx
 /** @jsx jsx */
-import { jsx } from 'tuture-slate-hyperscript'
+import { jsx } from 'slate-hyperscript'
 
 const input = (
   <fragment>
@@ -151,12 +151,12 @@ This is great for test cases, or places where you want to be able to write a lot
 
 However! This doesn't help with deserialization.
 
-But `tuture-slate-hyperscript` isn't only for JSX. It's just a way to build _trees of Slate content_. Which happens to be exactly what you want to do when you're deserializing something like HTML.
+But `slate-hyperscript` isn't only for JSX. It's just a way to build _trees of Slate content_. Which happens to be exactly what you want to do when you're deserializing something like HTML.
 
 For example, here's a `deserialize` function for HTML:
 
 ```js
-import { jsx } from 'tuture-slate-hyperscript'
+import { jsx } from 'slate-hyperscript'
 
 const deserialize = el => {
   if (el.nodeType === 3) {

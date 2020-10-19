@@ -9,8 +9,8 @@ You can define these behaviors by passing "render props" to the top-level `<Edit
 For example if you wanted to render custom element components, you'd pass in the `renderElement` prop:
 
 ```jsx
-import { createEditor } from 'tuture-slate'
-import { Slate, Editable, withReact } from 'tuture-slate-react'
+import { createEditor } from 'slate'
+import { Slate, Editable, withReact } from 'slate-react'
 
 const MyEditor = () => {
   const editor = useMemo(() => withReact(createEditor()), [])
@@ -76,7 +76,7 @@ const renderLeaf = useCallback(({ attributes, children, leaf }) => {
 }, [])
 ```
 
-Notice though how we've handled it slightly differently than `renderElement`. Since text formatting texts to be fairly simple, we've opted to ditch the `switch` statement and just toggle on/off a few styles instead. (But there's nothing preventing you from using custom components if you'd like!)
+Notice though how we've handled it slightly differently than `renderElement`. Since text formatting tends to be fairly simple, we've opted to ditch the `switch` statement and just toggle on/off a few styles instead. (But there's nothing preventing you from using custom components if you'd like!)
 
 One disadvantage of text-level formatting is that you cannot guarantee that any given format is "contiguous"—meaning that it stays as a single leaf. This limitation with respect to leaves is similar to the DOM, where this is invalid:
 

@@ -53,7 +53,7 @@ yarn build
 
 ## Running Examples
 
-To run the examples, start by building the mono repo as described in the [Repository Setup](#repository-setup) section.
+To run the examples, start by building the monorepo as described in the [Repository Setup](#repository-setup) section.
 
 Then you can start the examples server with:
 
@@ -63,7 +63,7 @@ yarn start
 
 ## Running Tests
 
-To run the tests, start by building the mono repo as described in the [Repository Setup](#repository-setup) section.
+To run the tests, start by building the monorepo as described in the [Repository Setup](#repository-setup) section.
 
 Then you can rerun the tests with:
 
@@ -73,7 +73,7 @@ yarn test
 
 If you need to debug something, you can add a `debugger` line to the source, and then run `yarn test:inspect`.
 
-If you only want to run a specific test or tests, you can run `yarn test --fgrep="tuture-slate-react rendering"` flag which will filter the tests being run by grepping for the string in each test. (This is a Mocha flag that gets passed through.)
+If you only want to run a specific test or tests, you can run `yarn test --fgrep="slate-react rendering"` flag which will filter the tests being run by grepping for the string in each test. (This is a Mocha flag that gets passed through.)
 
 ## Testing Input Methods
 
@@ -81,7 +81,7 @@ If you only want to run a specific test or tests, you can run `yarn test --fgrep
 
 ## Publishing Releases
 
-Since we use [Lerna](https://lerna.js.io) to manage the Slate packages this is fairly easy, just run:
+Since we use [Lerna](https://lerna.js.org) to manage the Slate packages this is fairly easy, just run:
 
 ```js
 yarn release

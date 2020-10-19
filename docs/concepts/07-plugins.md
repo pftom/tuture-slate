@@ -1,6 +1,6 @@
 # Plugins
 
-You've already seen how the behaviors of Slate editors can be overriden. These overrides can also be packaged up into "plugins" to be reused, tested and shared. This is one of the most powerful aspects of Slate's architecture.
+You've already seen how the behaviors of Slate editors can be overridden. These overrides can also be packaged up into "plugins" to be reused, tested and shared. This is one of the most powerful aspects of Slate's architecture.
 
 A plugin is simply a function that takes an `Editor` object and returns it after it has augmented it in some way.
 
@@ -21,7 +21,7 @@ const withImages = editor => {
 And then to use the plugin, simply:
 
 ```js
-import { createEditor } from 'tuture-slate'
+import { createEditor } from 'slate'
 
 const editor = withImages(createEditor())
 ```
@@ -33,7 +33,7 @@ This plugin composition model makes Slate extremely easy to extend!
 In addition to the plugin functions, you might want to expose helper functions that are used alongside your plugins. For example:
 
 ```js
-import { Editor, Element } from 'tuture-slate'
+import { Editor, Element } from 'slate'
 
 const MyEditor = {
   ...Editor,

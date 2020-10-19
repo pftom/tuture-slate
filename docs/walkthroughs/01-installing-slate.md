@@ -1,9 +1,9 @@
 # Installing Slate
 
-Slate is a monorepo divided up into multi npm packages, so to install it you do:
+Slate is a monorepo divided up into multiple npm packages, so to install it you do:
 
 ```
-yarn add slate tuture-slate-react
+yarn add slate slate-react
 ```
 
 You'll also need to be sure to install Slate's peer dependencies:
@@ -12,18 +12,19 @@ You'll also need to be sure to install Slate's peer dependencies:
 yarn add react react-dom
 ```
 
-_Note, if you'd rather use a pre-bundled version of Slate, you can `yarn add slate` and retrieve the bundled `dist/slate.js` file! Check out the [Using the Bundled Source](./using-the-bundled-source.md) guide for more information._
+_Note, if you'd rather use a pre-bundled version of Slate, you can `yarn add slate` and retrieve the bundled `dist/slate.js` file! Check out the [Using the Bundled Source](./XX-using-the-bundled-source.md) guide for more information._
 
 Once you've installed Slate, you'll need to import it.
 
+
 ```jsx
 // Import React dependencies.
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from "react";
 // Import the Slate editor factory.
-import { createEditor } from 'tuture-slate'
+import { createEditor } from 'slate'
 
 // Import the Slate components and React plugin.
-import { Slate, Editable, withReact } from 'tuture-slate-react'
+import { Slate, Editable, withReact } from 'slate-react'
 ```
 
 Before we use those imports, let's start with an empty `<App>` component:
@@ -122,4 +123,4 @@ const App = () => {
 
 There you have it!
 
-That's the most basic example of Slate. If you render that onto the page, you should see a paragraph with the text `A line of text in a paragraph.`. And when you type, you should see the text change!
+That's the most basic example of Slate. If you render that onto the page, you should see a paragraph with the text `A line of text in a paragraph.` And when you type, you should see the text change!
