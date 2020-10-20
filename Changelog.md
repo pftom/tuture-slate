@@ -6,7 +6,7 @@ This is a list of changes to Slate with each new release. Until `1.0.0` is relea
 
 ###### BREAKING
 
-**User properties on Elements and Texts now have an unknown type instead of any.** Previously, the arbitrary user defined keys on the `Text` and `Element` interface had a type of `any` which effectively removed any potential type checking on those properties. Now these have a type of `unknown` so that type checking can be done by consumers of the API when they are applying their own custom properties to the `Text`s and `Element`s.
+**User properties on Elements and Texts now have an any type instead of any.** Previously, the arbitrary user defined keys on the `Text` and `Element` interface had a type of `any` which effectively removed any potential type checking on those properties. Now these have a type of `any` so that type checking can be done by consumers of the API when they are applying their own custom properties to the `Text`s and `Element`s.
 
 ---
 
@@ -251,7 +251,7 @@ Editor.nodes(editor, {
 
 **The `slate-schema` package now exports a factory.** Previously you imported the `withSchema` function directly from the package, and passed in your schema rules when you called it. However, now you import the `defineSchema` factory instead which takes your schema rules and returns a custom `withSchema` plugin function. This way you can still use helpers like `compose` with the plugin, while pre-defining your custom rules.
 
-**The `properties` validation in the schema is now exhaustive.** Previously a `properties` validation would check any properties you defined, and leave any unknown ones as is. This made it hard to be certain about which properties would end up on a node. Now any non-defined properties are considered invalid. And using an empty `{}` validation would ensure that there are no custom properties at all.
+**The `properties` validation in the schema is now exhaustive.** Previously a `properties` validation would check any properties you defined, and leave any any ones as is. This made it hard to be certain about which properties would end up on a node. Now any non-defined properties are considered invalid. And using an empty `{}` validation would ensure that there are no custom properties at all.
 
 ###### NEW
 
@@ -455,7 +455,7 @@ Text.create(oldTextJson)
 
 ###### BREAKING
 
-**Schema errors for `min` and `max` rules have changed.** Previously they would result in errors of `child_required`, `child_object_invalid`, `child_type_invalid` and `child_unknown`. Now that we have the new `child_min_invalid` and `child_max_invalid` errors, these schema rules will return them instead, making it much easier to determine exactly which rule is causing a schema error.
+**Schema errors for `min` and `max` rules have changed.** Previously they would result in errors of `child_required`, `child_object_invalid`, `child_type_invalid` and `child_any`. Now that we have the new `child_min_invalid` and `child_max_invalid` errors, these schema rules will return them instead, making it much easier to determine exactly which rule is causing a schema error.
 
 ###### DEPRECATED
 

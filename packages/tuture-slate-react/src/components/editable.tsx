@@ -1067,7 +1067,7 @@ const isTargetInsideVoid = (
  */
 
 const isEventHandled = <
-  EventType extends React.SyntheticEvent<unknown, unknown>
+  EventType extends React.SyntheticEvent<any, any>
 >(
   event: EventType,
   handler?: (event: EventType) => void

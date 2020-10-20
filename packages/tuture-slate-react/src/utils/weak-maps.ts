@@ -41,4 +41,4 @@ export const EDITOR_TO_ON_CHANGE = new WeakMap<Editor, () => void>()
  * Symbols.
  */
 
-export const PLACEHOLDER_SYMBOL = (Symbol('placeholder') as unknown) as string
+export const PLACEHOLDER_SYMBOL = (Symbol('placeholder') as any) as string

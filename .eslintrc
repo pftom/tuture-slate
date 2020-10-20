@@ -107,7 +107,7 @@
     "react/no-did-mount-set-state": "error",
     "react/no-did-update-set-state": "error",
     "react/no-string-refs": "error",
-    "react/no-unknown-property": "error",
+    "react/no-any-property": "error",
     "react/react-in-jsx-scope": "error",
     "react/self-closing-comp": "error",
     "react/sort-prop-types": "error",
